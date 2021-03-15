@@ -1,0 +1,20 @@
+# HTTP Server
+server:  port: 3333
+  
+spring:  datasource:    url: jdbc:mysql://localhost:3306/paciente?useSSL=false
+    username: root
+    password: admin
+  jpa:    generate-ddl: true
+    
+#Discovery Server Access
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    status-page-url-path: /infoPaciente
+    health-check-url-path: /healthPaciente
+    metadata-map:
+       app-owner: lchourio
+       description: test application for the expert course
+       
