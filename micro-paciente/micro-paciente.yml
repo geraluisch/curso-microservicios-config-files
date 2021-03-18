@@ -6,7 +6,7 @@ spring:
   application:
     name: servicio-paciente
   datasource:
-    url: jdbc:mysql://localhost:3306/paciente?useSSL=false
+    url: jdbc:mysql://localhost:3306/paciente?allowPublicKeyRetrieval=true&useSSL=false
     username: root
     password: admin
   jpa:
