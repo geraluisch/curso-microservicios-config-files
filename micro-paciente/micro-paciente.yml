@@ -11,7 +11,9 @@ spring:
     password: admin
   jpa:
     generate-ddl: true
-    
+  cloud:
+    config:
+      override-none: true  
 #Discovery Server Access
 eureka:
   client:
