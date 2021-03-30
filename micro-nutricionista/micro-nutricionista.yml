@@ -12,6 +12,8 @@ eureka:
        app-owner: lchourio
        description: test application for the expert course
 ribbon:
+  eureka:
+    enabled: true
   NIWSServerListClassName: com.netflix.niws.loadbalancer.DiscoveryEnabledNIWSServerList 
   DeploymentContextBasedVipAddresses: servicio-nutricionista
   NIWSServerListFilterClassName: com.netflix.loadbalancer.ServerListSubsetFilter
