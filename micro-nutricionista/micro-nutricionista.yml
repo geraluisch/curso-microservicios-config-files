@@ -11,3 +11,8 @@ eureka:
     metadata-map:
        app-owner: lchourio
        description: test application for the expert course
+ribbon:
+  NIWSServerListClassName: com.netflix.niws.loadbalancer.DiscoveryEnabledNIWSServerList 
+  DeploymentContextBasedVipAddresses: servicio-nutricionista
+  NIWSServerListFilterClassName: com.netflix.loadbalancer.ServerListSubsetFilter
+  ServerListSubsetFilter.size: 5
