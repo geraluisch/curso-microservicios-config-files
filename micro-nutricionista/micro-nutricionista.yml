@@ -15,6 +15,6 @@ ribbon:
   eureka:
     enabled: true
   NIWSServerListClassName: com.netflix.niws.loadbalancer.DiscoveryEnabledNIWSServerList 
-  DeploymentContextBasedVipAddresses: servicio-nutricionista
+  DeploymentContextBasedVipAddresses: micro-nutricionista
   NIWSServerListFilterClassName: com.netflix.loadbalancer.ServerListSubsetFilter
   ServerListSubsetFilter.size: 5
