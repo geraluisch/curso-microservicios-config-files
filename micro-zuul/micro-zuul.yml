@@ -1,0 +1,18 @@
+zuul:
+  routes:
+    consulta:
+      path: /consulta/**
+      sensitive-headers:
+      service-id: micro-nutricionista    
+    compra:
+      path: /pacientes/**
+      sensitive-headers:
+      service-id: mirco-paciente    
+    
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      default-zone: http://localhost:8761/eureka/
+server:
+  port: 6565
