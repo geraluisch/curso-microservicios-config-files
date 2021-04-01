@@ -1,13 +1,13 @@
-zuul:
-  routes:
-    consulta:
-      path: /consulta/**
-      sensitive-headers:
-      service-id: micro-nutricionista    
-    compra:
-      path: /pacientes/**
-      sensitive-headers:
-      service-id: mirco-paciente    
+#zuul:
+#  routes:
+#    consulta:
+#      path: /consulta/**
+#      sensitive-headers:
+#      service-id: micro-nutricionista    
+#    compra:
+#      path: /pacientes/**
+#      sensitive-headers:
+#      service-id: mirco-paciente    
     
 eureka:
   client:
