@@ -7,7 +7,7 @@ zuul:
     pacientes:
       path: /pacientes/**
       sensitive-headers:
-      service-id: mirco-paciente    
+      service-id: micro-paciente    
     
 eureka:
   client:
