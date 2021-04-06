@@ -1,4 +1,7 @@
 zuul:
+  RibbonRoutingFilter:
+    route:
+      disable: true
   routes:
     nutricionista:
       path: /consulta/**
