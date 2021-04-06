@@ -1,7 +1,4 @@
 zuul:
-  RibbonRoutingFilter:
-    route:
-      disable: true
   routes:
     nutricionista:
       path: /consulta/**
@@ -17,5 +14,10 @@ eureka:
     register-with-eureka: false
     service-url:
       default-zone: http://localhost:8761/eureka/
+
+ribbon:
+  eureka:
+    enabled: false
+
 server:
   port: 6565
