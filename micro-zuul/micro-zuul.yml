@@ -1,10 +1,10 @@
 zuul:
   routes:
-    consulta:
+    nutricionista:
       path: /consulta/**
       sensitive-headers:
       service-id: micro-nutricionista    
-    pacientes:
+    paciente:
       path: /pacientes/**
       sensitive-headers:
       service-id: micro-paciente    
