@@ -14,6 +14,7 @@ spring:
   cloud:
     config:
       override-none: true  
+
 #Discovery Server Access
 eureka:
   client:
@@ -25,4 +26,10 @@ eureka:
     metadata-map:
        app-owner: lchourio
        description: test application for the expert course
+
+#Security
+security:
+  oauth2:
+    resource:
+      user-info-uri: http://localhost:7744/user 
        
