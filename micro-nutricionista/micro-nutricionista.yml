@@ -18,3 +18,10 @@ ribbon:
   DeploymentContextBasedVipAddresses: micro-nutricionista
   NIWSServerListFilterClassName: com.netflix.loadbalancer.ServerListSubsetFilter
   ServerListSubsetFilter.size: 5
+
+
+#Security
+security:
+  oauth2:
+    resource:
+      user-info-uri: http://localhost:7744/user 
